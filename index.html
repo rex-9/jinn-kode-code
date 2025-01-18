@@ -102,6 +102,13 @@
     function closePopup(blogId) {
       document.getElementById(blogId).style.display = 'none';
     }
+
+    // Ensure the popup is hidden on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      closePopup('blog1');
+      closePopup('blog2');
+      closePopup('blog3');
+    });
   </script>
 </body>
 </html>
