@@ -13,7 +13,7 @@ body {
   }
 
   50% {
-    background-color: #ffe066;
+    background-color: #000;
   }
 
   100% {
@@ -33,9 +33,9 @@ body {
 header {
   text-align: center;
   padding: 30px;
-  background: #ff6f61;
+  background: white;
   border-radius: 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -44,11 +44,12 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px #000;
+  color: #b8860b;
 }
 
 header p {
   font-size: 1.3em;
-  color: #fff7e6;
+  color: #b8860b;
 }
 
 section {
