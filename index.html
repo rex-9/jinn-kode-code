@@ -36,10 +36,62 @@
         </div>
       </div>
     </section>
+    <section class="blogs">
+      <h2>My Blog</h2>
+      <div class="blog-list">
+        <div class="blog-card" onclick="openBlog('blog1')">
+          <h3>Learning Roblox Scripting</h3>
+          <p>My journey in creating games on Roblox and tips for beginners!</p>
+        </div>
+        <div class="blog-card" onclick="openBlog('blog2')">
+          <h3>Web Design with CSS</h3>
+          <p>Tips and tricks for creating fun and engaging websites using CSS.</p>
+        </div>
+        <div class="blog-card" onclick="openBlog('blog3')">
+          <h3>Understanding Block Coding</h3>
+          <p>A beginner's guide to understanding the basics of block coding.</p>
+        </div>
+      </div>
+    </section>
     <footer>
       <p>Follow me on <a href="https://www.youtube.com/@jinnkodecode" target="_blank">YouTube</a> and <a href="https://facebook.com/jinnkodecode" target="_blank">Facebook</a></p>
       <p>Made with ❤️ by Jinn</p>
     </footer>
   </div>
+
+  <!-- Blog Popups -->
+  <div class="popup" id="blog1">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('blog1')">&times;</span>
+      <h2>Learning Roblox Scripting</h2>
+      <p>Here's a blog about how I got started with Roblox scripting...</p>
+    </div>
+  </div>
+
+  <div class="popup" id="blog2">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('blog2')">&times;</span>
+      <h2>Web Design with CSS</h2>
+      <p>In this blog, I share some fun and easy techniques for CSS...</p>
+    </div>
+  </div>
+
+  <div class="popup" id="blog3">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('blog3')">&times;</span>
+      <h2>Understanding Block Coding</h2>
+      <p>Here I explain the basics of block coding and how to get started...</p>
+    </div>
+  </div>
+
+  <script>
+    function openBlog(blogId) {
+      document.getElementById(blogId).style.display = 'block';
+    }
+
+    function closePopup(blogId) {
+      document.getElementById(blogId).style.display = 'none';
+    }
+  </script>
 </body>
 </html>
